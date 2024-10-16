@@ -3,8 +3,8 @@ cari tahu siapa saja calon ketua senat mahasiswa yang berada 9 angkatan lebih tu
 author: k.eii
 
 ## format flag:
-SNI{Nama Lengkap_Nama Lengkap_Nama Lengkap}
-*berurut abjad, case sensitive
+ SNI{Nama Lengkap_Nama Lengkap_Nama Lengkap}
+ *berurut abjad, case sensitive
 
 poc:
 - author soal adalah k.eii, sekolah di PoltekSSN. PoltekSSN sebelumnya adalah STSN
