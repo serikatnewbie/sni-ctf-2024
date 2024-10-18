@@ -5,7 +5,7 @@
 name: "baby-comms"
 author: "azuketto"
 category: Crypto
-description: Alice is asking Bob for the flag!
+description: Alice is asking Bob for the flag!\n\n**azuketto**
 value: 500
 type: dynamic
 # The extra field provides additional fields for data during the install/sync commands/
