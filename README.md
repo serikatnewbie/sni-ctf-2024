@@ -17,3 +17,8 @@ Each category has its own README for challenge descriptions:
 - [Crypto Challenges](Crypto)
 
 Good luck!
+
+## How to contribute
+1. Clone the repository
+2. Install requirements `pip install -r requirements.txt`
+3. See usage of [ctfcli](https://github.com/CTFd/ctfcli) to add new challenge boilerplate
