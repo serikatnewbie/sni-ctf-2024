@@ -21,5 +21,8 @@ believe me, its just an intro to DFIR about ransom cases
 - reverse engineer the ransomware
 - decrypt encrypted files
 
+## wu:
+https://docs.google.com/document/d/1_iKIMLUQDeSsszZLPGHmG-nUvj0i8DcW67ol2qrBics/edit?usp=sharing
+
 ## rar password:
 ```k.eii_1s_just_a_cut3_l1ttl3_b1rb```
