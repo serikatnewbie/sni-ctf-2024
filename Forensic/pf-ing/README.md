@@ -1,6 +1,6 @@
 ## desc:
 believe me, its just an intro to DFIR about ransom cases
-https://mega.nz/file/Eu4VHSKJ#6bC9BSbdrHiG4r9j7fh2YefZWtf7nmBOGtvjJ2oZreo
+> https://mega.nz/file/Eu4VHSKJ#6bC9BSbdrHiG4r9j7fh2YefZWtf7nmBOGtvjJ2oZreo
 
 ## flag:
 ```SNI{intr0_t0_df1r_and_th1s_g1rl_is_w4y_b3tter_than_Chizuru}```
