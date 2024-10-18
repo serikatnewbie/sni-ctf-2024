@@ -1,0 +1,9 @@
+version: '1'
+services:
+  read-around:
+    build: .
+    restart: on-failure
+    container_name: baby-comms
+    read_only: true
+    ports:
+      - 8010:8010
