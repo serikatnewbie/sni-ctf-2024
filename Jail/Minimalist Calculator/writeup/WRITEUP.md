@@ -9,5 +9,5 @@ Calling the `eval` function without specifying globals and locals means that all
 Alternatively, we can override the `int` class to be the `tuple` class.
 
 ```py
->> (tuple:=int,flag)
+>> (int:=tuple,flag)
 ```
