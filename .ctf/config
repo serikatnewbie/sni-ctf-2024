@@ -1,0 +1,7 @@
+[config]
+url = https://tbd
+access_token = tbd
+
+[challenges]
+.\Crypto\baby-comms\ = .\Crypto\baby-comms\
+
