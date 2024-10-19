@@ -4,4 +4,5 @@ access_token = tbd
 
 [challenges]
 .\Crypto\baby-comms\ = .\Crypto\baby-comms\
+Jail/Minimalist Calculator = Jail/Minimalist Calculator
 
