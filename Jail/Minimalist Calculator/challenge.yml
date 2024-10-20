@@ -11,7 +11,7 @@ type: dynamic
 extra:
     initial: 500
     decay: 50
-    minimum: 50
+    minimum: 100
 
 connection_info: nc {{ .host }} 14000
 

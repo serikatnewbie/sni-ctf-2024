@@ -1,0 +1,29 @@
+name: "Coloring"
+author: "msfir"
+category: Pwn
+description: |
+  Do you know about ANSI Escape Codes? Here is a simple program that will color your text!
+
+  **msfir**
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+connection_info: nc {{ .host }} 16000
+
+flags:
+    - SNI{seems_like_a_heap_exploitation_challenge_but_this_is_actually_just_an_oob}
+
+tags:
+    - pwn
+
+files:
+    - dist.zip
+
+state: hidden
+
+version: "0.1"
