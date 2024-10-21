@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
+openssl rsa -in private_key.pem -pubout -out public_key.pem
+output=$(openssl rsa -in private_key.pem -modulus -noout | cut -d '=' -f 2 | xxd -r -p | base64 | tr -d '\n')
+echo `sed "s|change_me|$output|g" public/.well-known/jwks.json` > public/.well-known/jwks.json
+composer install
+php artisan migrate
+php artisan serve --host=0.0.0.0 --port=8000
