@@ -4,4 +4,5 @@ access_token = tbd
 
 [challenges]
 .\Crypto\baby-comms\ = .\Crypto\baby-comms\
+Rev/OhNoo = Rev/OhNoo
 
