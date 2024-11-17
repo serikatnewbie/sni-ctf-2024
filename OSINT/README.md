@@ -6,4 +6,5 @@ An OSINT (Open-Source Intelligence) is a type of cybersecurity puzzle that tests
 
 | Name   | Topic           | Difficulties | Author |
 |--------|-----------------|--------------|--------|
+| haunted-repository | metadata, social media | Easy | dapa |
 | my-seniors | wayback, dorking         | Hard | k.eii |
