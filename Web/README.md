@@ -6,4 +6,4 @@ Web CTF challenges focus on exploiting vulnerabilities in web applications. Part
 
 | Name   | Topic           | Difficulties | Author |
 |--------|-----------------|--------------|--------|
-| <Name> | <Topic>         | <Difficulty> | <Author> |
+| JawaWawaKawa | JWK SSRF         | Easy | Bengsky |

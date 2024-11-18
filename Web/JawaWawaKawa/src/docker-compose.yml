@@ -1,0 +1,16 @@
+services:
+  app:
+    image: php:fpm
+    container_name: laravel_app
+    working_dir: /app/src
+    volumes:
+      - ./src/app:/app/src/app
+      - ./src/package:/app/src/package
+    ports:
+      - "8000:8000"
+    command: bash /app/src/start
+    environment:
+      - PHP_FPM_PORT=8000
+    build:
+      context: .
+      dockerfile: Dockerfile

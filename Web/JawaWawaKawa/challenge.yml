@@ -1,0 +1,24 @@
+name: "JawaWawaKawa"
+author: "bengsky"
+category: Web
+description: Jenenge Bambang Tapi Dudung Wong Jowo, Hobi saya adalah berselancar\n\n**bengsky**
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: https://jawawawakawa.ctf.itsbengsky.id
+flags:
+    - SNI{ssrf_via_gopher_jwk_h3h3_h3h3_h3h3_6969_6969}
+topics:
+    - web
+tags:
+    - web
+files:
+    - src
+state: hidden
+version: "0.1"
