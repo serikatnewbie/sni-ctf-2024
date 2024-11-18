@@ -1,54 +1,29 @@
-// gcc -o chall chall.c -fstack-protector-strong -fPIE -pie -Wl,-z,relro,-z,now -Wl,-z,noexecstack -D_FORTIFY_SOURCE=2
+// gcc -o chall chall.c
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 
-void print_black(char *s)
-{
-    printf("\033[30m%s\033[0m", s);
-}
+#define DEF_PRINTER(NAME, COLOR)                                                                                       \
+    void print_##NAME(char *s)                                                                                         \
+    {                                                                                                                  \
+        printf("\033[" #COLOR "m%s\033[0m", s);                                                                        \
+    }
 
-void print_red(char *s)
-{
-    printf("\033[31m%s\033[0m", s);
-}
-
-void print_green(char *s)
-{
-    printf("\033[32m%s\033[0m", s);
-}
-
-void print_yellow(char *s)
-{
-    printf("\033[33m%s\033[0m", s);
-}
-
-void print_blue(char *s)
-{
-    printf("\033[34m%s\033[0m", s);
-}
-
-void print_magenta(char *s)
-{
-    printf("\033[35m%s\033[0m", s);
-}
-
-void print_cyan(char *s)
-{
-    printf("\033[36m%s\033[0m", s);
-}
-
-void print_white(char *s)
-{
-    printf("\033[37m%s\033[0m", s);
-}
+DEF_PRINTER(black, 30);
+DEF_PRINTER(red, 31);
+DEF_PRINTER(green, 32);
+DEF_PRINTER(yellow, 33);
+DEF_PRINTER(blue, 34);
+DEF_PRINTER(magenta, 35);
+DEF_PRINTER(cyan, 36);
+DEF_PRINTER(white, 37);
 
 typedef void (*color_printer)(char *);
 
 typedef struct
 {
-    int color;
+    color_printer color;
     char text[];
 } color_text;
 
@@ -67,7 +42,7 @@ void init()
     alarm(60);
 }
 
-int choose_color()
+color_printer choose_color()
 {
     printf("Available colors:\n");
     print_black("1. Black\n");
@@ -84,9 +59,9 @@ int choose_color()
     if (choice - 1 >= NUM_COLORS)
     {
         printf("Invalid color\n");
-        return -1;
+        return NULL;
     }
-    return choice - 1;
+    return printers[choice - 1];
 }
 
 void create_text()
@@ -101,14 +76,18 @@ void create_text()
     }
     printf("Size: ");
     scanf("%zu", &size);
-    int color = choose_color();
-    if (color == -1)
+    color_printer color = choose_color();
+    if (color == NULL)
     {
         return;
     }
-    texts[index] = malloc(sizeof(color_text) + size);
+    texts[index] = malloc(sizeof(color_text) + size - 1);
     printf("Text: ");
-    scanf(" %[^\n]", texts[index]->text);
+    int n = read(STDIN_FILENO, texts[index]->text, size);
+    if (texts[index]->text[n - 1] == '\n')
+    {
+        texts[index]->text[n - 1] = '\0';
+    }
     texts[index]->color = color;
     printf("Text %zu created\n", index);
 }
@@ -128,7 +107,7 @@ void print_text()
         printf("Text %zu does not exist\n", index);
         return;
     }
-    printers[texts[index]->color](texts[index]->text);
+    texts[index]->color(texts[index]->text);
     putchar('\n');
 }
 
@@ -167,8 +146,8 @@ void change_color()
         printf("Text %zu does not exist\n", index);
         return;
     }
-    int color = choose_color();
-    if (color == -1)
+    color_printer color = choose_color();
+    if (color == NULL)
     {
         return;
     }
