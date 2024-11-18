@@ -1,0 +1,27 @@
+name: "Huh"
+author: "msfir"
+category: Rev
+description: |
+  ![huh](https://c.tenor.com/UPhAUsA9UGkAAAAd/tenor.gif)
+
+  **msfir**
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+flags:
+    - SNI{obfuscated_code_goes_brrrrr}
+
+tags:
+    - rev
+
+files:
+    - src/chall
+
+state: hidden
+
+version: "0.1"
