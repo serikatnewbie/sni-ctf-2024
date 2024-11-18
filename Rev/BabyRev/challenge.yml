@@ -1,0 +1,29 @@
+name: "BabyRev"
+author: "msfir"
+category: Rev
+description: |
+  Cuma chall baby
+
+  ![smirk](https://c.tenor.com/jdBcF2gmsIoAAAAd/tenor.gif)
+
+  **msfir**
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+flags:
+    - SNI{is_it_baby_enough_for_you??}
+
+tags:
+    - rev
+
+files:
+    - src/chall
+
+state: hidden
+
+version: "0.1"
