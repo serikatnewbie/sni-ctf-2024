@@ -7,6 +7,7 @@ This repository contains the official challenges for the **SNI CTF 2024**. Each 
 - **Pwn**: Exploiting vulnerabilities in binaries or systems.
 - **Reverse Engineering**: Understanding compiled programs to retrieve flags.
 - **Crypto**: Solving cryptographic challenges.
+- **Boot2root**: Exploiting vulnerabilities to gain root access.
 
 Each category has its own README for challenge descriptions:
 
@@ -15,6 +16,7 @@ Each category has its own README for challenge descriptions:
 - [Pwn Challenges](Pwn)
 - [Reverse Engineering Challenges](Rev)
 - [Crypto Challenges](Crypto)
+- [Boot2root Challenges](Boot2root)
 
 Good luck!
 
