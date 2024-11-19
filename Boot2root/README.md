@@ -7,7 +7,7 @@ Boot2root is a type of challenge that typically involves gaining root access ora
 | Name   | Topic           | Difficulties | Author |
 |--------|-----------------|--------------|--------|
 | Eirene | Simple-git RCE, Credential Reuse, PIP Download RCE, Docker group Privilege Escalation         | Easy | 404Gh0st |
-| Diomedes | Varnish Cache H2 Http Request Smuggling, SSTI, Docker container breakout, Git apply file write, postscript Privilege Escalation         | Medium | 404Gh0st |
+| Diomedes | Varnish Cache H2 Http Request Smuggling, SSTI, Docker container breakout, Git apply file write, Postscript file write Privilege Escalation         | Medium | 404Gh0st |
 | Achilles | Guest share, Username enumeration, ASREPRoasting, AD CS Shadow Credential, Window Credential Manager Decryption, Resource-Based Constrained Delegation          | Hard | 404Gh0st |
 
 
