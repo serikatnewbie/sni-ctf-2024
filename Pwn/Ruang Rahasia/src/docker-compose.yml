@@ -1,9 +1,0 @@
-version: "3"
-
-services:
-  chall:
-    restart: always
-    build: .
-    ports:
-      - "8018:8018"
-    read_only: true
