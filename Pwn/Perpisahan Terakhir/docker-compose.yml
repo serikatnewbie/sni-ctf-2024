@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  chall:
+    restart: always
+    build: .
+    ports:
+      - "7294:7294"
+    read_only: true
