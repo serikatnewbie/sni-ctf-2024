@@ -6,4 +6,4 @@ Pwn challenges involve binary exploitation where participants are required to br
 
 | Name   | Topic           | Difficulties | Author |
 |--------|-----------------|--------------|--------|
-| Ruang Rahasia | Shellcode         | Easy | itoid |
+| Perpisahan | Shellcode         | Easy | itoid |
