@@ -1,0 +1,26 @@
+name: "Hadiah Bengsky"
+author: "agoyy"
+category: Programming
+description: |
+    Flag: SNI{hex(sha256(output))}
+value: 0
+type: static
+
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+flags:
+    - SNI{8ada35bb40aa223aa9d45a5a0fa7e765579f5491838aec0ca2f540c156c5238f}
+
+tags:
+    - Programming
+
+files:
+    - Hadiah Bengsky.pdf
+    - testcase.in
+
+state: hidden
+
+version: "0.1"

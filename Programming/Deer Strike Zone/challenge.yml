@@ -1,0 +1,28 @@
+name: "Deer Strike Zone"
+author: "agoyy"
+category: Programming
+description: |
+    Flag: SNI{hex(output)}
+
+    Contoh: SNI{deadbeef}, SNI{7}
+value: 0
+type: static
+
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+flags:
+    - SNI{b6097ca4013d553ae0cf46edebf51bc68}
+
+tags:
+    - Programming
+
+files:
+    - Deer Strike Zone.pdf
+    - testcase.in
+
+state: hidden
+
+version: "0.1"
