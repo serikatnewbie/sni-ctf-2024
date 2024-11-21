@@ -1,0 +1,46 @@
+from tqdm import tqdm
+
+def levenshtein(arr1, arr2, insert_cost=1, delete_cost=1, substitute_cost=1):
+    dp = [[0] * (len(arr2) + 1) for _ in range(len(arr1) + 1)]
+
+    for i in range(len(arr1) + 1):
+        dp[i][0] = i * delete_cost
+    for j in range(len(arr2) + 1):
+        dp[0][j] = j * insert_cost
+
+    for i in range(1, len(arr1) + 1):
+        for j in range(1, len(arr2) + 1):
+            if arr1[i - 1] == arr2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1]
+            else:
+                dp[i][j] = min(
+                    dp[i - 1][j] + delete_cost,
+                    dp[i][j - 1] + insert_cost,
+                    dp[i - 1][j - 1] + substitute_cost
+                )
+
+    return dp[len(arr1)][len(arr2)]
+
+testcase = open("testcase.in", "r").read().splitlines()
+
+N = int(testcase.pop(0))
+score = 0
+
+insert_cost = 11
+delete_cost = 7
+substitute_cost = 15
+
+bef = testcase.pop(0).split(" ")
+with tqdm(total=N - 1, desc="Levenshtein Distances") as pbar:
+    while len(testcase) > 0:
+        aft = testcase.pop(0).split(" ")
+        res = levenshtein(bef, aft, insert_cost, delete_cost, substitute_cost)
+        score += res
+        bef = aft
+        pbar.update(1)
+
+print("POINT: ", score)
+print("SNI{"+hex(score)[2:]+"}")
+# constraint -> O((N-1)*(X)*(Y))
+# 1 < N <= 100000
+# 0 < X <= 100
