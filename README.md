@@ -8,6 +8,7 @@ This repository contains the official challenges for the **SNI CTF 2024**. Each 
 - **Reverse Engineering**: Understanding compiled programs to retrieve flags.
 - **Crypto**: Solving cryptographic challenges.
 - **Boot2root**: Exploiting vulnerabilities to gain root access.
+- **Blockchain**: Exploiting smart contracts vulnerabilities.
 
 Each category has its own README for challenge descriptions:
 
@@ -17,6 +18,7 @@ Each category has its own README for challenge descriptions:
 - [Reverse Engineering Challenges](Rev)
 - [Crypto Challenges](Crypto)
 - [Boot2root Challenges](Boot2root)
+- [Blockchain Challenges](Blockchain)
 
 Good luck!
 
