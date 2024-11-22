@@ -1,8 +1,23 @@
 [config]
-url = https://tbd
-access_token = tbd
+url = http://108.136.244.10
+access_token = ctfd_5ab8882cc22e8dba8eb7cfd2004e55121a18d23a8d8fd9e55056fcf140608777
 
 [challenges]
-.\Crypto\baby-comms\ = .\Crypto\baby-comms\
+Crypto/baby-comms = Crypto/baby-comms
+Crypto/algebra quiz = Crypto/algebra quiz
 Jail/Minimalist Calculator = Jail/Minimalist Calculator
 Rev/OhNoo = Rev/OhNoo
+Forensic/pf-ing = Forensic/pf-ing
+Forensic/Konnichiwa = Forensic/Konnichiwa
+Forensic/quotes of the day = Forensic/quotes of the day
+OSINT/vehicle = OSINT/vehicle
+OSINT/my-seniors = OSINT/my-seniors
+Programming/Deer Strike Zone = Programming/Deer Strike Zone
+Programming/Hadiah Bengsky = Programming/Hadiah Bengsky
+Programming/Lomba Rusa = Programming/Lomba Rusa
+Pwn/Coloring = Pwn/Coloring
+Rev/BabyRev = Rev/BabyRev
+Rev/Huh = Rev/Huh
+Rev/OhNoo = Rev/OhNoo
+Rev/wleee = Rev/wleee
+Web/JawaWawaKawa = Web/JawaWawaKawa
