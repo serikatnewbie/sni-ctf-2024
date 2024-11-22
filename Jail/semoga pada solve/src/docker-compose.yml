@@ -1,0 +1,7 @@
+services:
+  semoga-pada-solve:
+    build: .
+    ports:
+      - "14001:5000"
+    restart: always
+    read_only: true

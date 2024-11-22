@@ -1,0 +1,7 @@
+services:
+  thats-python:
+    build: .
+    ports:
+      - "14002:5000"
+    restart: always
+    read_only: true
