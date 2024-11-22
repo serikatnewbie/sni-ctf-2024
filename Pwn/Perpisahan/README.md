@@ -1,4 +1,4 @@
-# Perpisahan Terakhir
+# Perpisahan
 
 ## Description
 Apakah ini akhir dari kisah kita?
