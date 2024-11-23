@@ -15,11 +15,11 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
   initial: 500
-  decay: 50
+  decay: 25
   minimum: 100
 
 # connection_info is used to provide a link, hostname, or instructions on how to connect to a challenge
-connection_info: https://tryhackme.com/r/room/da2c54fe6129ddf18d7dbe08821193a0
+connection_info: https://tryhackme.com/jr/da2c54fe6129ddf18d7dbe08821193a0
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 # Can be removed if unused
