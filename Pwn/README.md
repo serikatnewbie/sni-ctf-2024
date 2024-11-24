@@ -7,3 +7,5 @@ Pwn challenges involve binary exploitation where participants are required to br
 | Name   | Topic           | Difficulties | Author |
 |--------|-----------------|--------------|--------|
 | Perpisahan | Shellcode         | Easy | itoid |
+| Sir Yes Sir! | -         | - | zran |
+| Coloring | -         | - | msfir |
