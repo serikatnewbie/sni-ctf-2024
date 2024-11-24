@@ -19,6 +19,8 @@ Each category has its own README for challenge descriptions:
 - [Crypto Challenges](Crypto)
 - [Boot2root Challenges](Boot2root)
 - [Blockchain Challenges](Blockchain)
+- [OSINT Challenges](OSINT)
+- [Jail Challenges](Jail)
 
 Good luck!
 
