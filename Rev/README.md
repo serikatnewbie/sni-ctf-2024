@@ -6,4 +6,7 @@ Reverse Engineering (Rev) challenges require participants to analyze compiled pr
 
 | Name   | Topic           | Difficulties | Author |
 |--------|-----------------|--------------|--------|
-| <Name> | <Topic>         | <Difficulty> | <Author> |
+| BabyRev | -         | Easy | msfir |
+| wlee | Windows         | Medium | FlaBBB |
+| huh | -        | Hard | msfir |
+| OhNoo | Linux         | Insane | FlaBBB |
