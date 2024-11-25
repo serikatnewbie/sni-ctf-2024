@@ -6,7 +6,7 @@ Singkat cerita, vulnerability di program ini terdapat pada saat melakukan create
 ```c
     texts[index] = malloc(sizeof(color_text) + size - 1);
 ```
->> Jika anda penasaran kenapa ditambah `sizeof(color_text)`, silahkan baca mengenai [Flexible Array Member](https://en.wikipedia.org/wiki/Flexible_array_member)
+> Jika anda penasaran kenapa ditambah `sizeof(color_text)`, silahkan baca mengenai [Flexible Array Member](https://en.wikipedia.org/wiki/Flexible_array_member)
 
 Terlihat bahwa size yang dialokasikan dikurangi 1 byte. Hal ini merupakan sebuah bug karena selanjutnya program akan meminta user untuk mengisi buffer dengan string berukuran `size`
 ```c
@@ -155,4 +155,4 @@ io.interactive()
 
 ```
 
-PS: urutan operasi yang dilakukan sangat penting. Silahkan anda debug sendiri untuk mencari tahu kenapa saya memilih urutan operasi seperti di atas
+> Urutan operasi yang dilakukan sangat penting. Silahkan anda debug sendiri untuk mencari tahu kenapa saya memilih urutan operasi seperti di atas
