@@ -6,4 +6,6 @@ Crypto challenges focus on breaking or analyzing cryptographic algorithms, ciphe
 
 | Name   | Topic           | Difficulties | Author |
 |--------|-----------------|--------------|--------|
-| <Name> | <Topic>         | <Difficulty> | <Author> |
+| Weird RSA | RSA         | - | agoyy |
+| baby-comms | -         | - | azuketto |
+| algebra quiz | -         | - | yellow |
