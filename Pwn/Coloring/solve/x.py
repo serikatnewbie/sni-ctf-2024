@@ -44,7 +44,7 @@ def delete_text(index):
 gdbscript = """
 c
 """
-host, port = args.HOST or "localhost", args.PORT or 16000
+host, port = args.HOST or "108.137.70.166", args.PORT or 16000
 exe = context.binary = ELF(args.EXE or "../src/chall", False)
 
 io = start()
