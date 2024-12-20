@@ -1,7 +1,7 @@
-# That's Python
+# That's Python?
 
 ## Description
-Halo
+Halo semuanya, python adalah sebuah bahasa pemrograman yang sangat mudah dimengerti
 
 ## Release
 chall.py

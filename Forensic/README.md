@@ -7,3 +7,5 @@ Forensic CTF challenges involve investigating and analyzing digital evidence to 
 | Name   | Topic           | Difficulties | Author |
 |--------|-----------------|--------------|--------|
 | pf-ing | memdump, prefetch         | Hard | k.eii |
+| Konnichiwa | C2, PCAP         | Medium | C2uru |
+| quotes of the day | File         | Easy | frennn |

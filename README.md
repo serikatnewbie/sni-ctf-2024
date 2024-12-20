@@ -9,6 +9,9 @@ This repository contains the official challenges for the **SNI CTF 2024**. Each 
 - **Crypto**: Solving cryptographic challenges.
 - **Boot2root**: Exploiting vulnerabilities to gain root access.
 - **Blockchain**: Exploiting smart contracts vulnerabilities.
+- **OSINT**: Using publicly available information and investigative techniques to uncover hidden clues or information.
+- **Jail**: Solving challenges in restricted or sandboxed environments, often requiring bypassing limitations or escaping confinements.
+- **Programming**: Writing scripts or solving algorithmic problems to extract the flag or automate tasks.
 
 Each category has its own README for challenge descriptions:
 
@@ -19,6 +22,9 @@ Each category has its own README for challenge descriptions:
 - [Crypto Challenges](Crypto)
 - [Boot2root Challenges](Boot2root)
 - [Blockchain Challenges](Blockchain)
+- [OSINT Challenges](OSINT)
+- [Jail Challenges](Jail)
+- [Programming Challenges](Programming)
 
 Good luck!
 

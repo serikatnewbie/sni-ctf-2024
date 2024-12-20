@@ -7,5 +7,6 @@ Blockchain challenges are focused on testing and improving participants' skills 
 | Name   | Topic           | Difficulties | Author |
 |--------|-----------------|--------------|--------|
 | Blackjack | Signature forgery/collision Attack, Unsafe Delegatecall | Medium | 404Gh0st |
+| Mizuhara Secret | - | - | C2Uru |
 
 

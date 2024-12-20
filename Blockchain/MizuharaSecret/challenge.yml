@@ -2,11 +2,11 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Eirene User"
-author: "404Gh0st"
-category: "Boot2root"
-description: "Eirene User flag\n\n**404Gh0st**"
-value: 250
+name: "MizuharaSecret"
+author: "TunangannyaChizuru"
+category: "Blockchain"
+description: "This is the entry chall\n\n**TunangannyaChizuru**"
+value: 500
 type: dynamic
 
 # The extra field provides additional fields for data during the install/sync commands/
@@ -14,30 +14,34 @@ type: dynamic
 # For example the follow extra field is for dynamic challenges. To use these following
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
-  initial: 250
-  decay: 25
+  initial: 500
+  decay: 25 
   minimum: 100
 
 # connection_info is used to provide a link, hostname, or instructions on how to connect to a challenge
-connection_info: https://tryhackme.com/jr/da2c54fe6129ddf18d7dbe08821193a0
+connection_info: http://108.137.70.166:46716/
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 # Can be removed if unused
 # Accepts strings or dictionaries of CTFd API data
 flags:
-    - SNI{5fbb7b82e9298ba8cc5fc46bd2592d2c}
+    - SNI{Introduction_To_Blockchain_Environment_a71fa51ca6}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only hidden to admins
 # Accepts strings
 topics:
-    - Linux
+    - Blockchain
 
 # Tags are used to provide additional public tagging to a challenge
 # Can be removed if unused
 # Accepts strings
 tags:
-    - Linux
+    - Blockchain
+
+files:
+    - ./contracts/client/MizuharaSecret.sol
+    - ./contracts/Setup.sol
 
 # Hints are used to give players a way to buy or have suggestions. They are not
 # required but can be nice.
