@@ -8,11 +8,8 @@ https://www.geeksforgeeks.org/prefetch-files-in-windows/
 
 ![image](https://github.com/user-attachments/assets/2bd0ab77-5b92-4e6e-a017-b576fb25d638)
 
-
-coba analisa file2 prefetch tersebut dan ingat bahwa proses microsoft edge adalah msedge.exe bukan Edge.exe
 Analyze the prefetch files. You will notice there is Edge.exe proccess that suspicious. (Remember that the process of MS Edge is msedge.exe, not Edge.exe)
 
-Ketika parsing prefetch Edge.exe dengan PECmd
 Analyze the Edge.exe prefetch with PECmd and you will find out that this exe will load some files in the Documents folder, resulting .dll files in `%localappdata%/temp` which is suspicious
 
 ![image](https://github.com/user-attachments/assets/38a79151-b37b-44b8-a180-aee06970919e)
