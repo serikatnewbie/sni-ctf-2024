@@ -1,6 +1,6 @@
-Tidak ditemukan proses mencurigakan pada pstree dan pslist
+If you analyze it with pslist or pstree, you wont notice anything suspicious
 
-Oleh karena itu coba cari recent opened apps dengan melihat file prefetch
+Because of that, try to check the prefetch artifacts that residen in the memory dumo
 
 https://www.geeksforgeeks.org/prefetch-files-in-windows/ 
 
@@ -10,14 +10,15 @@ https://www.geeksforgeeks.org/prefetch-files-in-windows/
 
 
 coba analisa file2 prefetch tersebut dan ingat bahwa proses microsoft edge adalah msedge.exe bukan Edge.exe
+Analyze the prefetch files. You will notice there is Edge.exe proccess that suspicious. (Remember that the process of MS Edge is msedge.exe, not Edge.exe)
 
 Ketika parsing prefetch Edge.exe dengan PECmd
-Ditemukan ini bahwa Edge.exe melakukan loading beberapa file yang berada dalam folder “Documents” lalu load sebuah file .dll di folder %localappdata%/temp. Hal ini tentu sangat mencurigakan
+Analyze the Edge.exe prefetch with PECmd and you will find out that this exe will load some files in the Documents folder, resulting .dll files in `%localappdata%/temp` which is suspicious
 
 ![image](https://github.com/user-attachments/assets/38a79151-b37b-44b8-a180-aee06970919e)
 
-Oleh karena itu bisa diasumsikan bahwa Edge.exe lah yang merupakan malicious program dan mungkin data2 itu adalah data asli dan data terenkripsi yang dihasilkan
-dumping Edge.exe dan file2 yang terkenkripsi
+By that evidence, you can assume that the Edge.exe is the malicious program and the data might be encrypted in the temp folder.
+Proceed to decrypt by dump the Edge.exe and the encrypted files
 
 ![image](https://github.com/user-attachments/assets/e3eac30c-7083-40b7-be43-5d0608e166e7)
 
@@ -25,11 +26,11 @@ Decompile Edge.exe
 
 ![image](https://github.com/user-attachments/assets/8c0a06c2-f112-4341-8090-ffb841856c9a)
 
-Fungsi enkripsi dengan XOR,
+XOR Encryption function.
 
 ![image](https://github.com/user-attachments/assets/3dc14694-d4c2-4e97-a728-89048fd146a9)
 
-Key dirand namun hanya dalam rentang % 256. Maka bisa dibruteforce
+Key is being randomized but only in the range of % 256 which can be bruteforced
 
 Dumping Encrypted File
 
