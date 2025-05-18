@@ -1,6 +1,6 @@
 If you analyze it with pslist or pstree, you wont notice anything suspicious
 
-Because of that, try to check the prefetch artifacts that residen in the memory dumo
+Because of that, try to check the prefetch artifacts that residen in the memory dump
 
 https://www.geeksforgeeks.org/prefetch-files-in-windows/ 
 
